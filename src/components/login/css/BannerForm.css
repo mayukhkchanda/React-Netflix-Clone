@@ -1,0 +1,154 @@
+button {
+  cursor: pointer;
+}
+
+.banner__form {
+  max-width: 960px;
+  padding-top: 0.875rem;
+}
+
+.banner_email_wrapper {
+  padding-top: 20px;
+  display: flex;
+}
+
+.banner__input {
+  min-width: 400px;
+  height: 50px;
+  border-radius: 0.2vw 0px 0px 0.2vw;
+  border: none;
+  outline: rgb(0, 132, 255);
+  padding-left: 15px;
+  padding-top: 10px;
+  line-height: 0.5rem;
+
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  color: #111;
+}
+
+.email__label {
+  position: absolute;
+  top: 73%;
+  left: 10%;
+  z-index: 1;
+  color: #8c8c8c;
+  font-size: 1.15rem;
+  font-weight: 500;
+  pointer-events: none;
+
+  transition: all 300ms ease;
+}
+
+.slide {
+  top: 70%;
+  left: 7.5%;
+  font-size: 0.925rem;
+}
+
+.banner_button {
+  background-color: #e50914;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.625rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 62px;
+  padding: 0px 35px;
+}
+
+.banner_button:hover {
+  background-color: #f40612;
+}
+
+.chevron {
+  height: 20px;
+  position: absolute;
+  bottom: 89px;
+  right: 60px;
+  fill: #fff;
+}
+
+.banner__form__header {
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .banner__form {
+    max-width: 100%;
+    padding-top: 0.5em;
+  }
+
+  .banner_email_wrapper {
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner__input_wrapper {
+    margin-bottom: 20px;
+  }
+
+  .banner__input {
+    padding-top: 20px;
+    height: 32px;
+    width: 100%;
+    font-size: 20px;
+    min-width: 0;
+  }
+
+  .banner_button {
+    height: 52px;
+    padding: 0px 23px 0px 10px;
+    border-radius: 4px;
+  }
+
+  .banner__button_text {
+    font-size: 1.425ren;
+  }
+
+  .chevron {
+    bottom: 64px;
+    right: 120px;
+  }
+
+  .email__label {
+    top: 57%;
+    left: 11%;
+    font-size: 1.1rem;
+  }
+
+  .slide {
+    top: 54%;
+    left: 9.5%;
+    font-size: 0.905rem;
+  }
+
+  .header_select_container {
+    margin-right: 4px;
+    margin-top: 0;
+    bottom: 4px;
+    transform: scale(0.875);
+    padding: 1px 3px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 414px) {
+  .banner__input {
+    padding-top: 20px;
+    height: 32px;
+    width: 97%;
+    font-size: 20px;
+    min-width: 0;
+    border-radius: 0.5vw;
+  }
+
+  .chevron {
+    right: 133px;
+  }
+}

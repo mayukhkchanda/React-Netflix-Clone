@@ -1,0 +1,280 @@
+.Row {
+  position: relative;
+  top: 74.525vh;
+  color: #fff;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 70px 45px;
+  background-color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 8px solid #222;
+}
+
+.Row__container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.Row__container.flipped {
+  flex-direction: row-reverse;
+}
+
+.Row__text {
+  width: 52%;
+  height: 100%;
+}
+
+.Row__container.flipped .Row__text {
+  padding: 20px;
+}
+
+.Row__text__title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 1.15rem;
+  font-weight: 500;
+}
+
+.Row__text__subtitle {
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.Row__image__container {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.Row__animation__container {
+  margin: -10% -5% -5% 0;
+  position: relative;
+}
+
+.Row__image {
+  position: inherit;
+  z-index: 2;
+}
+
+/* .Row__image__animation {
+} */
+
+video {
+  position: absolute;
+  bottom: 19vh;
+  left: 3.8vw;
+  display: inline-block;
+  vertical-align: baseline;
+  height: 18vw;
+  width: 37vw;
+  max-height: 280px;
+  max-width: 380px;
+}
+
+.Row__video.allDevices {
+  bottom: 25vh;
+  width: 28vw;
+  left: 8vw;
+}
+
+/* Animation Card  */
+.animation {
+  display: flex;
+
+  border: 2.3px solid #9c9c9c;
+  border-radius: 10px;
+
+  padding: 0.5em 0.75em;
+  background: #000;
+  align-items: center;
+
+  justify-content: space-between;
+
+  position: absolute;
+
+  bottom: 115px;
+  left: 8.5vw;
+
+  z-index: 3;
+}
+
+.animation__image_wrapper {
+  margin-right: 15px;
+}
+
+.animation__image {
+  width: 51px;
+  height: 72px;
+}
+
+.animation__text {
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-right: 10px;
+}
+
+.animation-gif {
+  width: 3em;
+  height: 3em;
+
+  background: #111
+    url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif")
+    no-repeat center;
+  background-size: 93.75%;
+  outline: 4px solid #000;
+  outline-offset: -3px;
+}
+
+.text-0 {
+  font-weight: 600;
+  font-size: 0.975em;
+}
+
+.text-1 {
+  font-weight: 100;
+  margin-top: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.895em;
+  color: #0071eb;
+}
+
+.Row.watchOnTv {
+  border-top: 8px solid #303030;
+}
+
+@media screen and (max-width: 1366px) and (min-width: 950px) {
+  .Row {
+    top: 106.525vh;
+  }
+
+  .Row__container.flipped .Row__animation__container {
+    margin: -10% 0% -5% 0;
+  }
+
+  video {
+    height: 22vw;
+    width: 43vw;
+    max-height: 421px;
+    max-width: 424px;
+    bottom: 19.725vh;
+    left: 4.875vw;
+  }
+  .animation {
+    left: 8.855vw;
+    bottom: 92px;
+  }
+
+  .Row__video.allDevices {
+    bottom: 25vh;
+    width: 23.125vw;
+    left: 8vw;
+    height: 27vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Row {
+    padding: 40px 20px;
+    height: 69vh;
+  }
+
+  .Row.Row.watchOnTv {
+    height: 65vh;
+  }
+
+  .Row__container {
+    flex-direction: column;
+  }
+
+  .Row__text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .Row__text__title {
+    font-size: 1.985rem;
+  }
+
+  .Row__text__subtitle {
+    font-size: 1.275rem;
+    text-align: center;
+  }
+
+  .Row__container.flipped {
+    flex-direction: column;
+  }
+
+  .Row__image__container {
+    width: 106%;
+    margin-top: 10px;
+  }
+  .Row__animation__container {
+    margin: auto;
+  }
+
+  video {
+    max-width: unset;
+    max-height: unset;
+    bottom: 19vh;
+    left: 12.8vw;
+    height: 43vw;
+    width: 68vw;
+  }
+
+  .animation {
+    padding: 0.25rem 0.34rem;
+    bottom: 89px;
+    left: 16.25vw;
+  }
+
+  .animation__image_wrapper {
+    margin-right: 15px;
+  }
+
+  .animation__image {
+    width: 35px;
+    height: 49px;
+  }
+
+  .animation__text .text-0 {
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+  .animation__text .text-1 {
+    font-weight: 100;
+    font-size: 0.9em;
+  }
+
+  .Row__video.allDevices {
+    bottom: 16vh;
+    width: 60vw;
+    height: 30vh;
+    left: 18vw;
+  }
+
+  .Row.allDevices .Row__image {
+    top: 47px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 414px) {
+  .animation {
+    padding: 0.25rem 0.34rem;
+    bottom: 95px;
+    left: 19.75vw;
+  }
+
+  video {
+    width: 69.5vw;
+  }
+}
