@@ -1,5 +1,8 @@
 import React from "react";
 import "./css/Navbar.css";
+import LangSelect from "./LangSelect";
+
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,6 +17,13 @@ const Navbar = () => {
           </g>
         </svg>
       </span>
+
+      <div className="right-floated">
+        <LangSelect></LangSelect>
+        <Link to="/signin" className="header__login">
+          Sign In
+        </Link>
+      </div>
     </div>
   );
 };

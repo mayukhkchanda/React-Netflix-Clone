@@ -1,4 +1,4 @@
-.login select {
+.landing select {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,7 +15,7 @@
   line-height: 1.5em;
 }
 
-.login .header_select_container {
+.landing .header_select_container {
   position: relative;
   margin-right: 2rem;
   background: #111;
@@ -26,12 +26,12 @@
   margin-top: 2px;
   max-width: 5.425rem;
 }
-.login .wrapper {
+.landing .wrapper {
   position: relative;
   box-sizing: border-box;
 }
 
-.login .wrapper:before {
+.landing .wrapper:before {
   content: "\f0ac";
   font-family: FontAwesome;
   position: absolute;
@@ -40,7 +40,7 @@
   margin-left: 2px;
 }
 
-.login .wrapper:after {
+.landing .wrapper:after {
   content: "\f0d7";
   font-family: FontAwesome;
   position: absolute;
@@ -49,20 +49,20 @@
   top: 7px;
 }
 
-.login .footer__links__list {
+.landing .footer__links__list {
   padding-bottom: 25px;
 }
 
-.login .footer__title--topPadded {
-  padding-top: 24px;
+.landing .footer__title--topPadded {
+  padding-top: 28px;
 }
 
-.login .footer .header_select_container {
-  padding: 6px 15px;
+.landing .footer .header_select_container {
+  padding: 10px 17px;
 }
 
 @media screen and (max-width: 600px) {
-  .login .header_select_container {
+  .landing .header_select_container {
     transform: scale(0.87);
     margin-right: 1rem;
     width: 5.435rem;

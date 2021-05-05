@@ -1,15 +1,15 @@
-.login .header {
+.landing .header {
   position: absolute;
   display: flex;
   flex-direction: row;
-  padding: 30px 0px 30px 45px;
+  padding: 30px 45px;
   max-width: 94%;
   width: 90%;
   justify-content: space-between;
   z-index: 1;
 }
 
-.login .right-floated {
+.landing .right-floated {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -20,29 +20,42 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.login .svg-fill-red {
+.landing .svg-fill-red {
   fill: #e50914;
   line-height: normal;
   height: 2.5rem;
   width: auto;
 }
 
+.landing .header__login {
+  background: #e50914;
+  padding: 8px 21px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
-  .login .header {
+  .landing .header {
     padding: 20px 20px;
   }
 
-  .login .svg-fill-red {
+  .landing .svg-fill-red {
     height: 1.725rem;
   }
 
-  .login .right-floated {
+  .landing .right-floated {
     align-items: flex-start;
   }
 
-  .login .header__login {
+  .landing .header__login {
     padding: 4px 11px;
     font-size: 0.9rem;
-    bottom: 10px;
+    bottom: -3px;
+    position: relative;
   }
 }
