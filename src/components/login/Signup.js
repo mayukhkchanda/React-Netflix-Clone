@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./css/Signup.css";
 
 function Signup() {
@@ -45,7 +46,9 @@ function Signup() {
           </label>
         </div>
         <div className="form_button_container">
-          <input type="submit" value="Sign in" className="form_button" />
+          <Link to="/dashboard">
+            <input type="submit" value="Sign in" className="form_button" />
+          </Link>
         </div>
         <div className="form_footer">
           <div className="footer_checkbox_container">

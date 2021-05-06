@@ -1,0 +1,50 @@
+.rows {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.header {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.image-container::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: all 450ms ease;
+}
+
+.image:hover {
+  transform: scale(1.08);
+}
+
+.image.enlarge {
+  max-height: 250px;
+  margin-right: 12px;
+}
+
+.image.image.enlarge:hover {
+  transform: scale(1.09);
+}
+
+@media all and (max-width: 600px) {
+  .row__youtube {
+    width: 96.5%;
+  }
+}

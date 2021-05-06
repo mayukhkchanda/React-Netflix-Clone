@@ -47,6 +47,7 @@
   font-weight: 700;
   background: #e50914;
   color: #fff;
+  cursor: pointer;
 }
 
 .form_footer {
@@ -82,9 +83,9 @@
   position: relative;
   top: 0px;
   margin-left: 8px;
-  font-size: 0.875em;
+  font-size: 0.995em;
   font-weight: 100;
-  color: #757575;
+  color: #d2d2d2;
 }
 
 .sign_in {
@@ -152,7 +153,8 @@
   }
 
   .gauth_text {
-    font-size: 0.995rem;
+    font-size: 1.2rem;
+    color: #d2d2d2;
   }
 
   .sign_in {

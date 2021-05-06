@@ -1,0 +1,80 @@
+.homepage .banner {
+  color: #fff;
+  position: relative;
+  object-fit: contain;
+  height: 448px;
+  margin-bottom: 0.7vw;
+}
+
+.homepage .banner-container {
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
+}
+
+.homepage .banner-title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.homepage .banner-description {
+  width: 45rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  max-width: 360px;
+  height: 80px;
+  word-spacing: 1px;
+}
+
+.homepage .banner-button {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+  background: rgba(51, 51, 51, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 0.2vw;
+  font-weight: 700;
+  font-size: medium;
+  transition: all 0.3s ease;
+}
+
+.homepage .banner-button:hover {
+  color: #333;
+  background-color: #e6e6e6;
+}
+
+.homepage .banner-fadebottom {
+  position: relative;
+  /* top: 3.2rem; */
+  height: 7.5rem;
+  background-image: linear-gradient(
+    180deg,
+    #c7c2c208,
+    rgb(51 51 51 / 56%),
+    #111
+  );
+}
+
+@media screen and (max-width: 600px) {
+  .homepage .banner-container {
+    position: relative;
+    top: 57px;
+  }
+  .homepage .banner-title {
+    font-size: 2rem;
+  }
+
+  .homepage .banner-button {
+    margin-right: 0.5rem;
+    background: rgba(1, 1, 1, 0.68);
+  }
+
+  .homepage .banner-description {
+    font-size: 0.9rem;
+    max-width: 300px;
+    text-align: left;
+  }
+}

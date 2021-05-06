@@ -1,27 +1,27 @@
-.banner {
+.landing .banner {
   z-index: 0;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.banner__background {
+.landing .banner__background {
   position: absolute;
   height: 706px;
   top: 0px;
 }
 
-img {
+.landing img {
   max-width: 100%;
 }
 
-.banner__image {
+.landing .banner__image {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.banner__fade {
+.landing .banner__fade {
   background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(
     to top,
@@ -36,7 +36,7 @@ img {
   width: 100%;
 }
 
-.banner__text {
+.landing .banner__text {
   z-index: 0;
   color: #fff;
   padding: 70px 45px;
@@ -49,46 +49,46 @@ img {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.banner_title {
+.landing .banner_title {
   width: 35rem;
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin: 0 auto;
 }
 
-.banner_title h1 {
+.landing .banner_title h1 {
   font-weight: 700;
 }
 
-.banner_sub-title {
+.landing .banner_sub-title {
   padding: 13px 0px;
   margin: 0 auto;
 }
 
-.banner_sub-title h2 {
+.landing .banner_sub-title h2 {
   font-weight: 500;
   font-size: 1.625rem;
 }
 
 @media screen and (max-width: 600px) {
-  .banner__text {
+  .landing .banner__text {
     padding: 30px 22px;
     top: 7rem;
     max-width: 95%;
     left: 0;
   }
-  .banner_title {
+  .landing .banner_title {
     font-size: 14px;
     line-height: 27px;
     width: 100%;
   }
-  .banner_sub-title {
+  .landing .banner_sub-title {
     margin-right: 0px;
     font-size: 8px;
     padding: 10px 0px;
   }
 
-  .banner_sub-title h2 {
+  .landing .banner_sub-title h2 {
     font-size: 2.245em;
   }
 }
