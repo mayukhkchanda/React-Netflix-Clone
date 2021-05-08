@@ -18,7 +18,7 @@ const Rows = ({ urlPath, label, isLargeRow }) => {
         .get(urlPath)
         .then((res) => res.data.results)
         .catch((err) => console.log(err));
-      console.log(data);
+      //console.log(data);
       setMovies(data);
     };
     getMovies();
