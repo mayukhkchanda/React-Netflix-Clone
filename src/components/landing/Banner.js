@@ -3,9 +3,6 @@ import BannerForm from "./BannerForm";
 import "./css/Banner.css";
 
 function Banner() {
-  /* const [email, setEmail] = useState("");
-  const [labelUp, setLabelUp] = useState(false); */
-
   return (
     <>
       <div className="banner">

@@ -4,6 +4,7 @@ import Landing from "./screens/Landing";
 import Login from "./screens/Login";
 import Homepage from "./screens/Homepage";
 import Profile from "./screens/Profile";
+import Signup from "./screens/Signup";
 import { authenticator } from "./firebase";
 import { signInAck, signOutAck } from "./actions";
 
@@ -28,6 +29,7 @@ const App = ({ User, signInAck, signOutAck }) => {
           <Route path="/" exact component={User ? Homepage : Landing} />
           <Route path="/signin" exact component={Login} />
           <Route path="/profiles" exact component={Profile} />
+          <Route path="/signup" exact component={Signup} />
         </Switch>
       </BrowserRouter>
     </div>

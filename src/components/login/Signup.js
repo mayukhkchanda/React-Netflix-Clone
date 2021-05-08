@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-//import { Link } from "react-router-dom";
 import "./css/Signup.css";
-//import { signInAck } from "../../actions";
 import { connect } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 import { authenticator } from "../../firebase";
 
@@ -13,13 +11,6 @@ const Signup = ({ User }) => {
 
   const [Email, setEmail] = useState(null);
   const [Passwd, setPasswd] = useState(null);
-
-  const signUpUser = () => {
-    authenticator
-      .createUserWithEmailAndPassword(Email, Passwd)
-      .then((newUser) => console.log(newUser))
-      .catch((err) => console.log(err));
-  };
 
   const logUserIn = (e) => {
     e.preventDefault();
@@ -104,9 +95,9 @@ const Signup = ({ User }) => {
         </div>
         <div className="sign_in">
           <span className="text-grey">New to Netflix?&nbsp;</span>
-          <span className="text-white link" onClick={signUpUser}>
-            Sign up now
-          </span>
+          <Link to="/signup">
+            <span className="text-white link">Sign up now</span>
+          </Link>
           .
         </div>
       </div>
