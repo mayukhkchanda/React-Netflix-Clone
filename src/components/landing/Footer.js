@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="footer--container">
           <p className="footer__title">
             Questions? Call &nbsp;
-            <a href="#" className="footer__tele">
+            <a href="" className="footer__tele">
               000-800-040-4015
             </a>
           </p>

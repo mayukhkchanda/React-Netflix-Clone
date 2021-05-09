@@ -23,7 +23,7 @@ const Row = ({
             <img
               className="Row__image"
               src={`assets/images/${imgSrc}`}
-              alt="image"
+              alt=""
             />
             <div
               className="Row__image__animation"
@@ -51,6 +51,7 @@ const Row = ({
                     <img
                       className="animation__image"
                       src={`assets/images/${animationSrc}`}
+                      alt=""
                     />
                   </div>
                   <div className="animation__text">

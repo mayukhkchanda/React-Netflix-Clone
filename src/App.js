@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Landing from "./screens/Landing";
 import Login from "./screens/Login";
 import Homepage from "./screens/Homepage";

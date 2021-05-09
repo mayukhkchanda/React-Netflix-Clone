@@ -22,6 +22,7 @@ const Profile = ({ User }) => {
           <div className="profileScreen__details">
             <img
               className="profileScreen__avatar"
+              alt="Avatar"
               src={`${process.env.PUBLIC_URL}/assets/images/AvatarLogo_Big.png`}
             />
             <div className="profileScreen_plans--container">

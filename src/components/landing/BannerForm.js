@@ -5,7 +5,7 @@ import { Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
 
 function BannerForm(props) {
-  const [email, setEmail] = useState("");
+  //const [email, setEmail] = useState("");
   const [labelUp, setLabelUp] = useState(false);
 
   const renderInput = ({ input, label, id, className, handleFocus }) => {
