@@ -70,6 +70,47 @@ body {
   cursor: pointer;
 }
 
+.profileScreen__renewalDate {
+  padding: 10px 0px;
+  font-size: 1.15em;
+}
+
+.profileScreen__plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  margin-bottom: 18px;
+  color: #c2c2c2;
+  cursor: default;
+  transition: color 300ms ease;
+}
+
+.profileScreen__plan:hover {
+  color: #fff;
+}
+
+.plan_info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.05em;
+}
+
+.plan_button {
+  font-size: 1.05em;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: #e50914;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.plan_button.current {
+  background: #c2c2c2;
+  color: #141414;
+}
+
 @media screen and (max-width: 600px) {
   .profileScreen__details--container {
     width: 80%;
@@ -80,5 +121,15 @@ body {
   }
   .profileScreen__avatar {
     height: 50px;
+  }
+  .profileScreen__renewalDate {
+    font-size: 1em;
+  }
+  .plan_info {
+    font-size: 0.975em;
+  }
+  .plan_button {
+    font-size: 0.975em;
+    padding: 3px 5px;
   }
 }

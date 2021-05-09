@@ -6,11 +6,34 @@ import { Redirect } from "react-router-dom";
 
 import { connect } from "react-redux";
 
+const plansArr = [
+  { name: "Netflix Standard", res: "1080p", isCurrent: false },
+  { name: "Netflix Basic", res: "480p", isCurrent: false },
+  { name: "Netflix Premium", res: "4k+HDR", isCurrent: true },
+];
+
 const Profile = ({ User }) => {
   const signOut = () => {
     authenticator.signOut();
   };
   //console.log(User);
+
+  const renderPlans = () => {
+    return plansArr.map((plan) => {
+      return (
+        <div className="profileScreen__plan">
+          <div className="plan_info">
+            <span className="plan_name">{plan.name}</span>
+            <span className="plan-res">{plan.res}</span>
+          </div>
+          <button className={`plan_button ${plan.isCurrent ? "current" : ""}`}>
+            {plan.isCurrent ? "Current Plan" : "Subscribe"}
+          </button>
+        </div>
+      );
+    });
+  };
+
   const renderContent = () => {
     return (
       <div className="profiles">
@@ -30,6 +53,12 @@ const Profile = ({ User }) => {
               <h3 className="profileScreen_currentPlan">
                 Plans(Current Plan: Premium)
               </h3>
+              <div className="profileScreen__plans">
+                <p className="profileScreen__renewalDate">
+                  Renewal date: 08/08/2021
+                </p>
+                {renderPlans()}
+              </div>
               <button onClick={signOut} className="profileScreen_signOut">
                 Sign Out
               </button>
