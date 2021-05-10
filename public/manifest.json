@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React-Netflix-Clone",
+  "name": "Netflix frontend clone built using ReactJS with Firebase authentication",
   "icons": [
     {
       "src": "favicon.ico",

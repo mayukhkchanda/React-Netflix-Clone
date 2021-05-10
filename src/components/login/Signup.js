@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import { emailValidator, passwdValidator } from "../../Utils/Validate";
 import { ShortError } from "../../Utils/GetShortError";
+import GoogleAuth from "../../google-auth/GoogleAuth";
 
 import { authenticator } from "../../firebase";
 
@@ -135,6 +136,7 @@ const Signup = ({ User }) => {
           </div>
         </form>
 
+        {/* <GoogleAuth></GoogleAuth> */}
         <div className="gauth_login">
           <img
             className="gauth_logo"
@@ -143,6 +145,7 @@ const Signup = ({ User }) => {
           />
           <span className="gauth_text">Login with Google</span>
         </div>
+
         <div className="sign_in">
           <span className="text-grey">New to Netflix?&nbsp;</span>
           <Link to="/signup">
